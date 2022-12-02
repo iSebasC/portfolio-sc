@@ -35,6 +35,9 @@
     <link rel="icon" href="img/sc-ico.png">
 
     <title>My Portfolio | Sebastian Cabrera</title>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   </head>
   <body id="home">
     <!-- Navbar -->
@@ -280,13 +283,14 @@
             </div>
           </div>
           <div class="col-md-7">
-            <form>
+            <form method="POST" data-netlify="true" action="#">
               <div class="mb-3">
                 <label for="name" class="form-label">Full Name</label>
                 <input
                   type="text"
                   class="form-control"
                   id="name"
+                  name="name"
                   aria-describedby="name"
                 />
               </div>
@@ -296,12 +300,13 @@
                   type="email"
                   class="form-control"
                   id="email"
+                  name="email"
                   aria-describedby="email"
                 />
               </div>
               <div class="mb-3">
                 <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
+                <textarea class="form-control" id="message" name="message" rows="3"></textarea>
               </div>
               <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
@@ -342,5 +347,7 @@
     ></script>
 
     <script src="js/script.js"></script>
+    <script src="js/enviar.js"></script>
+    
   </body>
 </html>
