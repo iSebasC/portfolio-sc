@@ -1,5 +1,34 @@
+/* Font-Face */
+
+/* @font-face {
+  font-family: 'Regular';
+  src: url('../font/Graphik-Regular-Trial.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Semibold';
+  src: url('../font/Graphik-Semibold-Trial.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Medium';
+  src: url('../font/Graphik-Medium-Trial.otf');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+/* END */
+
+/* .text-start {
+  font-family: 'Semibold';
+} */
 
 .jumbotron {
+    /* font-family: 'Regular'; */
     padding-top: 6rem;
     background-image: url('../img/wallpaper.jpg');
     width: 100%;
@@ -7,6 +36,10 @@
     background-size: cover;
     color: #fff;
 }
+
+/* .presentation{
+  font-family: 'Regular';
+} */
 
 .navbar-brand {
     font-size: 28px;
